@@ -4,25 +4,31 @@ body {
     height: 100vh;
     align-items: center;
     flex-direction: column;
+    background-color: white;
+    
 }
 
 #gameboard{
     display: flex;
-    border: 2px solid black;
-}
-
-.square {
-    width: 115px;
-    height: 115px;
+    border: 1px solid black;
+    cursor: grab;
     
 }
 
-.yellow {
-    background-color: #fad465;
+.square {
+    width: 120px;
+    height: 120px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+   
 }
 
-.blue {
-    background-color: #555bad;
+.brown {
+    background-color: rgb(149, 41, 41);
+}
+
+.tan {
+    background-color: rgba(227, 227, 29, 0.246);
 }
 
 #info {
@@ -38,7 +44,17 @@ body {
     box-sizing: border-box;
 }
 
-.chess-piece {
+.chess-piece, .chess-piece-pawn {
     height: 115px;
     width: 115px;
 }
+
+.word {
+    color: rgb(149, 41, 41);
+        margin: auto;
+        
+        font: 700 normal 2.5em 'tahoma';
+        text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+      
+}
+
